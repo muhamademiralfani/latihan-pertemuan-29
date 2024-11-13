@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import React from 'react';
 import Header from '../Components/Header';
 import BlackIcon from '../assets/img/Black.jpg';
@@ -89,10 +87,10 @@ const About = () => {
           text="We are a team of experts in the field of finance and accounting, dedicated to providing the best services to our clients."
           button="Learn More"
         />
+
       </div>
     </>
   );
 };
 
 export default About;
->>>>>>> Stashed changes
