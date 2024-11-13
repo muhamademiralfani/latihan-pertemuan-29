@@ -4,6 +4,7 @@ import SectionTitle from "../Components/SectionTitle";
 import InfoCard from "../Components/InfoCard";
 import MainCard from "../Components/MainCard";
 import Banner from "../Components/Banner";
+import bannerImg from '../assets/img/banner.jpeg';
 
 const Services = () => {
   return (
@@ -76,7 +77,7 @@ const Services = () => {
 
 			<section className="flex justify-center items-center my-10">
 				<div className="w-4/5 md:w-3/5">
-					<Banner image="https://picsum.photos/400/200" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae." button="Learn More" />
+					<Banner image={bannerImg} text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae." button="Learn More" />
 				</div>
 			</section>
     </div>
