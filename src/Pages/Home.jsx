@@ -10,7 +10,6 @@ import Black5Icon from "../assets/img/Black-5.jpg";
 import Black6Icon from "../assets/img/Black-6.jpg";
 import Black7Icon from "../assets/img/Black-7.jpg";
 import Black8Icon from "../assets/img/Black-8.jpg";
-import MainBlogCard from "../Components/MainBlogCard";
 
 const Home = () => {
   const cardDataOurProcess = [
@@ -55,10 +54,10 @@ const Home = () => {
             position={"left"}
           />
           <div className="pl-3">
-            <Button children="View More" />
+            <Button>View More</Button>
           </div>
         </div>
-        <div flex flex-col items-center justify-center>
+        <div className="flex flex-col items-center justify-center">
           <img
             src={Group65Image}
             alt=""
@@ -117,7 +116,9 @@ const Home = () => {
               key={index}
               icon={card.icon}
               title={card.title}
-              descripttion={card.description}
+
+              description={card.description}
+
               number={card.number}
             />
           ))}
@@ -155,7 +156,9 @@ const Home = () => {
               desc="Ready to Help"
               number="+62 259519252"
             />
-            <Button children="View More" />
+
+            <Button>View More </Button>
+
           </div>
         </div>
       </div>
