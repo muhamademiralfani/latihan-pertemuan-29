@@ -6,7 +6,7 @@ import React from 'react';
 */
 const Button = ({children}) => {
   return (
-    <button className='px-2 py-1 bg-accent text-white rounded-md hover:opacity-90 font-semibold'>{children}</button>
+    <button className='self-center px-2 py-1 bg-accent text-white rounded-md hover:opacity-90 font-semibold'>{children}</button>
   )
 }
 
