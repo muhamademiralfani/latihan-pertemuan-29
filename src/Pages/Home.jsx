@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from "../Components/SectionTitle";
 import Button from "../Components/Button";
 import Group65Image from "../assets/img/Group65.jpg";
-import MaskGroupImage from "../assets/img/MaskGroup.jpg";
+import MaskGroupImage from "../assets/img/Maskgroup.jpg";
 import InfoCard from "../Components/InfoCard";
 import BlackIcon from "../assets/img/Black.jpg";
 import MainCard from "../Components/MainCard";
