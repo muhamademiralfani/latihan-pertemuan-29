@@ -3,8 +3,8 @@ import Header from '../Components/Header';
 import SectionTitle from '../Components/SectionTitle';
 import MainBlogCard from '../Components/MainBlogCard';
 import BlogCard from '../Components/BlogCard';
-import BlogImage from '../assets/img/Rectangle 25-2.jpg';
-import BlogProfile from '../assets/img/Ellipse 4-1.jpg';
+import BlogImage from '../assets/img/Rectangle25-2.jpg';
+import BlogProfile from '../assets/img/Ellipse4-1.jpg';
 
 const Blogs = () => {
   return (
