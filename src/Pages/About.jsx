@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../Components/Header';
 import BlackIcon from '../assets/img/Black.jpg';
-import MaskGroupImage from '../assets/img/Mask Group.jpg';
+import MaskGroupImage from '../assets/img/MaskGroup.jpg';
 import InfoCard from '../Components/InfoCard';
 import SectionTitle from '../Components/SectionTitle';
-import Leader_1 from '../assets/img/Rectangle 14.jpg';
-import Leader_2 from '../assets/img/Rectangle 15.jpg';
+import Leader_1 from '../assets/img/Rectangle14.jpg';
+import Leader_2 from '../assets/img/Rectangle15.jpg';
 import Banner from '../Components/Banner';
 import Banner_1 from '../assets/img/banner.jpeg';
 
