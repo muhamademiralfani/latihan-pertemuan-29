@@ -11,17 +11,41 @@ const Blogs = () => {
     <>
       <Header breadcrumb={'Blogs'} />
       <div className='flex flex-col items-center justify-center mt-20'>
-        <SectionTitle sectionTitle={'Latest Blogs'} breadcrumb={'Our Blogs'} />
+        <SectionTitle sectionTitle={'Latest Blogs'} breadcrumb={'Our Blogs'} position="center" />
         <div className='flex mx-auto justify-center'>
           <div>
-            <MainBlogCard />
+            <MainBlogCard 
+              cardImage={BlogImage}
+              cardTitle='The most popular business of the year'
+              cardDate='12th June 2023'
+              authorName='Ranold Jeff.'
+              authorImage={BlogProfile}
+              readTime='2 Min Read'
+              direction='col' 
+            />
           </div>
           <div>
             <div>
-              <MainBlogCard />
+              <MainBlogCard 
+                cardImage={BlogImage}
+                cardTitle='The most popular business of the year'
+                cardDate='12th June 2023'
+                authorName='Ranold Jeff.'
+                authorImage={BlogProfile}
+                readTime='2 Min Read'
+                direction='row' 
+              />
             </div>
             <dir>
-              <MainBlogCard />
+              <MainBlogCard 
+                cardImage={BlogImage}
+                cardTitle='The most popular business of the year'
+                cardDate='12th June 2023'
+                authorName='Ranold Jeff.'
+                authorImage={BlogProfile}
+                readTime='2 Min Read'
+                direction='row' 
+              />
             </dir>
           </div>
         </div>

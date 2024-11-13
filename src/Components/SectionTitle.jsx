@@ -8,7 +8,7 @@ const SectionTitle = ({ breadcrumb, sectionTitle, position }) => {
         <h1 className={`text-accent text-xl py-1 text-${position} font-bold`}>
           \ {breadcrumb} \
         </h1>
-        <p className="text-primary text-[2rem] py-1 font-bold">
+        <p className={`text-primary text-[2rem] py-1 font-bold text-${position}`}>
           {sectionTitle}
         </p>
       </div>
