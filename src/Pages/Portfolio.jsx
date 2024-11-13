@@ -1,5 +1,5 @@
 import React from 'react';
-import PortfolioGroup from '../components/PortfolioGroup';
+import PortfolioGroup from '../Components/PortfolioGroup';
 import Banner from '../Components/Banner';
 import bannerImg from '../assets/img/banner.jpeg';
 
