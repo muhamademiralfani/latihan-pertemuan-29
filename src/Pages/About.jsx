@@ -7,7 +7,7 @@ import SectionTitle from '../Components/SectionTitle';
 import Leader_1 from '../assets/img/Rectangle 14.jpg';
 import Leader_2 from '../assets/img/Rectangle 15.jpg';
 import Banner from '../Components/Banner';
-import Banner_1 from '../assets/img/banner2.jpeg';
+import Banner_1 from '../assets/img/banner.jpeg';
 
 const About = () => {
   return (
@@ -81,7 +81,7 @@ const About = () => {
       </section>
 
       {/* Banner Section */}
-      <div className="flex justify-center mt-12 lg:w-[1000px] mx-auto items-center">
+      <div className="mb-10 w-4/5 flex justify-center mt-12 lg:w-[1000px] mx-auto items-center">
         <Banner
           image={Banner_1}
           text="We are a team of experts in the field of finance and accounting, dedicated to providing the best services to our clients."

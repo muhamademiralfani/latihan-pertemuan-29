@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact";
 import Portfolio from "./Pages/Portfolio";
 import Services from "./Pages/Services";
 import Blogs from "./Pages/Blogs";
+import Footer from "./Layouts/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/service" element={<Services />} />
           <Route path="/blog" element={<Blogs />} />
         </Routes>
+      <Footer />
       </Router>
     </>
   );

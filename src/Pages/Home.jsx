@@ -21,21 +21,21 @@ const Home = () => {
       number: "1",
     },
     {
-      icon: Black5Icon,
+      icon: Black6Icon,
       title: "Design",
       description:
         "It is a long established fact that a reader will be distra by the readable content of a page.",
       number: "2",
     },
     {
-      icon: Black5Icon,
+      icon: Black7Icon,
       title: "Develope",
       description:
         "It is a long established fact that a reader will be distra by the readable content of a page.",
       number: "3",
     },
     {
-      icon: Black5Icon,
+      icon: Black8Icon,
       title: "Test",
       description:
         "It is a long established fact that a reader will be distra by the readable content of a page.",
@@ -46,7 +46,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero section START */}
-      <div className="flex flex-row items-center justify-center px-46 py-10">
+      <div className="flex-col-reverse flex md:flex-row items-center justify-center px-46 py-10">
         <div className="flex flex-col items-start justify-center">
           <SectionTitle
             breadcrumb="We are here"
@@ -68,7 +68,7 @@ const Home = () => {
       {/* Hero section END */}
 
       {/* About section START */}
-      <div className="flex flex-row items-center justify-center px-52 py-10 bg-secondary">
+      <div className="flex flex-col md:flex-row items-center justify-center px-52 py-10 bg-secondary">
         <div className="flex flex-col items-center justify-center">
           <img
             src={MaskGroupImage}
@@ -110,7 +110,7 @@ const Home = () => {
           position={"center"}
         />
 
-        <div className="flex flex-row items-center justify-center gap-5">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-5">
           {cardDataOurProcess.map((card, index) => (
             <MainCard
               key={index}
@@ -127,7 +127,7 @@ const Home = () => {
       {/* Planning section END */}
 
       {/* What we do section START */}
-      <div className="flex flex-row items-center justify-center px-52 py-10 bg-secondary">
+      <div className="flex flex-col md:flex-row items-center justify-center px-52 py-10 bg-secondary">
         <div className="flex flex-col items-center justify-center">
           <img
             src={MaskGroupImage}
