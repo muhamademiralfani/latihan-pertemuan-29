@@ -5,6 +5,7 @@ import InfoCard from "../Components/InfoCard";
 import MainCard from "../Components/MainCard";
 import Banner from "../Components/Banner";
 import bannerImg from '../assets/img/banner.jpeg';
+import Black5Icon from "../assets/img/Black-5.jpg";
 
 const Services = () => {
   return (
@@ -67,11 +68,11 @@ const Services = () => {
 				</header>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-2">
-					<MainCard icon="bx-code-alt" title="Web Development" descripttion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae." />
+					<MainCard icon={Black5Icon} title="Web Development" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae." />
 
-					<MainCard icon="bx-code-alt" title="Web Development" descripttion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae." />
+					<MainCard icon={Black5Icon} title="Web Development" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae." />
 
-					<MainCard icon="bx-code-alt" title="Web Development" descripttion="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae." />
+					<MainCard icon={Black5Icon} title="Web Development" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae." />
 				</div>
       </section>
 

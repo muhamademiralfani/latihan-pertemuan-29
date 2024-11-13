@@ -52,9 +52,9 @@ const Home = () => {
             breadcrumb="We are here"
             sectionTitle="Better Insights For Business Growth"
           />
-          <Button children="View More" />
+          <Button>View More</Button>
         </div>
-        <div flex flex-col items-center justify-center>
+        <div className="flex flex-col items-center justify-center">
           <img
             src={Group65Image}
             alt=""
@@ -108,7 +108,7 @@ const Home = () => {
               key={index}
               icon={card.icon}
               title={card.title}
-              descripttion={card.description}
+              description={card.description}
               number={card.number}
             />
           ))}
@@ -146,7 +146,7 @@ const Home = () => {
               desc="Ready to Help"
               number="+62 259519252"
             />
-            <Button children="View More" />
+            <Button>View More </Button>
           </div>
         </div>
       </div>
