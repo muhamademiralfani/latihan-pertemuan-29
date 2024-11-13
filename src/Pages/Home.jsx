@@ -46,13 +46,16 @@ const Home = () => {
   return (
     <div>
       {/* Hero section START */}
-      <div className="flex flex-row items-center justify-center px-52 py-10">
-        <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-row items-center justify-center px-46 py-10">
+        <div className="flex flex-col items-start justify-center">
           <SectionTitle
             breadcrumb="We are here"
             sectionTitle="Better Insights For Business Growth"
+            position={"left"}
           />
-          <Button>View More</Button>
+          <div className="pl-3">
+            <Button>View More</Button>
+          </div>
         </div>
         <div className="flex flex-col items-center justify-center">
           <img
@@ -77,7 +80,8 @@ const Home = () => {
         <div className="flex flex-col items-start justify-center px-5">
           <SectionTitle
             breadcrumb="We are here"
-            sectionTitle="Better Insights For Business Growth"
+            sectionTitle="One of the Fastest Way to Business Growth"
+            position={"left"}
           />
           <p className="text-base pl-3 pr-10">
             It is a long established fact that a reader will be distracted by
@@ -100,7 +104,11 @@ const Home = () => {
 
       {/* Planning section START */}
       <div className="flex flex-col items-center justify-center px-52 py-10 pb-20">
-        <SectionTitle breadcrumb="Planning" sectionTitle="Our Process" />
+        <SectionTitle
+          breadcrumb="Planning"
+          sectionTitle="Our Process"
+          position={"center"}
+        />
 
         <div className="flex flex-row items-center justify-center gap-5">
           {cardDataOurProcess.map((card, index) => (
@@ -108,7 +116,9 @@ const Home = () => {
               key={index}
               icon={card.icon}
               title={card.title}
+
               description={card.description}
+
               number={card.number}
             />
           ))}
@@ -146,7 +156,9 @@ const Home = () => {
               desc="Ready to Help"
               number="+62 259519252"
             />
+
             <Button>View More </Button>
+
           </div>
         </div>
       </div>
