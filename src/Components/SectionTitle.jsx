@@ -1,9 +1,9 @@
 import React from "react";
 
-const Header = ({ breadcrumb, sectionTitle }) => {
+const SectionTitle = ({ breadcrumb, sectionTitle }) => {
   return (
     <>
-      <div className="flex flex-col justify-center min-h-72 pl-3 pr-10">
+      <div className="flex flex-col justify-center min-h-32 pl-3 pr-10">
         <h1 className="text-accent text-xl py-1 text-left font-bold">
           \ {breadcrumb} \
         </h1>
@@ -13,4 +13,4 @@ const Header = ({ breadcrumb, sectionTitle }) => {
   );
 };
 
-export default Header;
+export default SectionTitle;

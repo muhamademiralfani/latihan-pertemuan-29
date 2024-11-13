@@ -7,7 +7,8 @@ import Contact from './Pages/Contact';
 import Portfolio from './Pages/Portfolio';
 import Services from './Pages/Services';
 
-const App = () => {
+
+function App() {
   return (
     <>
       <Router>
