@@ -1,12 +1,12 @@
-import React from 'react'
-import Button from './Components/Button'
+import React from "react";
+import Home from "./Pages/Home";
 
-const App = () => {
+function App() {
   return (
-    <div className='flex flex-col items-center justify-center h-screen'>
-      <Button>Click me</Button>
-    </div>
-  )
+    <>
+      <Home />
+    </>
+  );
 }
 
-export default App
+export default App;
