@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Header from '../Components/Header';
 import SectionTitle from '../Components/SectionTitle';
@@ -5,47 +6,31 @@ import MainBlogCard from '../Components/MainBlogCard';
 import BlogCard from '../Components/BlogCard';
 import BlogImage from '../assets/img/Rectangle25-2.jpg';
 import BlogProfile from '../assets/img/Ellipse4-1.jpg';
+import { Helmet } from 'react-helmet';
+import { useSchema } from '../context/SchemaContext';
 
 const Blogs = () => {
+  const schema = useSchema();
   return (
     <>
+      <Helmet>
+        <title>Our Blog - Your Website Name</title>
+        <meta name='description' content='Read our latest blog posts on industry insights and news.' />
+        <script type='application/ld+json'>{JSON.stringify(schema.blog)}</script>
+      </Helmet>
       <Header breadcrumb={'Blogs'} />
       <div className='flex flex-col items-center justify-center mt-20'>
-        <SectionTitle sectionTitle={'Latest Blogs'} breadcrumb={'Our Blogs'} position="center" />
+        <SectionTitle sectionTitle={'Latest Blogs'} breadcrumb={'Our Blogs'} position='center' />
         <div className='flex mx-auto justify-center'>
           <div>
-            <MainBlogCard 
-              cardImage={BlogImage}
-              cardTitle='The most popular business of the year'
-              cardDate='12th June 2023'
-              authorName='Ranold Jeff.'
-              authorImage={BlogProfile}
-              readTime='2 Min Read'
-              direction='col' 
-            />
+            <MainBlogCard cardImage={BlogImage} cardTitle='The most popular business of the year' cardDate='12th June 2023' authorName='Ranold Jeff.' authorImage={BlogProfile} readTime='2 Min Read' direction='col' />
           </div>
           <div>
             <div>
-              <MainBlogCard 
-                cardImage={BlogImage}
-                cardTitle='The most popular business of the year'
-                cardDate='12th June 2023'
-                authorName='Ranold Jeff.'
-                authorImage={BlogProfile}
-                readTime='2 Min Read'
-                direction='row' 
-              />
+              <MainBlogCard cardImage={BlogImage} cardTitle='The most popular business of the year' cardDate='12th June 2023' authorName='Ranold Jeff.' authorImage={BlogProfile} readTime='2 Min Read' direction='row' />
             </div>
             <dir>
-              <MainBlogCard 
-                cardImage={BlogImage}
-                cardTitle='The most popular business of the year'
-                cardDate='12th June 2023'
-                authorName='Ranold Jeff.'
-                authorImage={BlogProfile}
-                readTime='2 Min Read'
-                direction='row' 
-              />
+              <MainBlogCard cardImage={BlogImage} cardTitle='The most popular business of the year' cardDate='12th June 2023' authorName='Ranold Jeff.' authorImage={BlogProfile} readTime='2 Min Read' direction='row' />
             </dir>
           </div>
         </div>

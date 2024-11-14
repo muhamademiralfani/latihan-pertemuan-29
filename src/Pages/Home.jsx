@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import SectionTitle from '../Components/SectionTitle';
 // import Button from '../Components/Button';
@@ -15,8 +16,11 @@ import ContactCard from '../Components/ContactCard';
 import ContactForm from '../Components/ContactForm';
 import IconBlack from '../assets/img/OurVision/Black.png';
 import IconLamp from '../assets/img/OurVision/lamp.png';
+import { Helmet } from 'react-helmet';
+import { useSchema } from '../context/SchemaContext';
 
 const Home = () => {
+  const schema = useSchema();
   const cardDataOurProcess = [
     {
       icon: Black5Icon,
@@ -46,6 +50,11 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Home Page - Your Website Name</title>
+        <meta name='description' content='Welcome to the home page of Your Website. We provide the best services in town.' />
+        <script type='application/ld+json'>{JSON.stringify(schema.homepage)}</script>
+      </Helmet>
       {/* Hero section START */}
       <div className='flex-col-reverse flex md:flex-row items-center justify-center px-46 lg:py-5 py-10 gap-x-40 lg:h-screen'>
         <div className='flex flex-col items-start justify-center'>

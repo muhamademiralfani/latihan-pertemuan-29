@@ -35,20 +35,10 @@ const ContactCard = () => {
   ];
 
   const contactCardSosial = [
-    {
-      icon: 'bx bxl-linkedin',
-    },
-
-    {
-      icon: 'bx bxl-instagram',
-    },
-    {
-      icon: 'bx bxl-facebook',
-    },
-
-    {
-      icon: 'bx bxl-twitter',
-    },
+    { icon: 'bx bxl-linkedin', link: 'https://www.linkedin.com/company/lumoshive/mycompany/' },
+    { icon: 'bx bxl-instagram', link: 'https://www.instagram.com/lumoshive.official/' },
+    { icon: 'bx bxl-facebook', link: 'https://web.facebook.com/lumoshive.official?_rdc=1&_rdr' },
+    { icon: 'bx bxl-twitter', link: 'https://x.com/lumoshive?s=21' },
   ];
 
   return (
@@ -58,8 +48,9 @@ const ContactCard = () => {
           return (
             <div key={index} className='flex gap-4'>
               <div className='px-5 rounded-md bg-secondary flex items-center justify-center text-accent text-center'>
-                <i className={`${item.icon} text-[30px]`}></i>
+                <i className={item.icon}></i>
               </div>
+
               <div>
                 <h3 className='text-accent font-semibold text-[20px]'>{item.title}</h3>
                 <div className='text-[14px]'>
@@ -79,9 +70,11 @@ const ContactCard = () => {
         <h3 className='text-primary text-[24px] font-semibold text-center'>Follow Us</h3>
         <div className='flex  justify-between text-white'>
           {contactCardSosial.map((item, index) => (
-            <div key={index} className='border px-4 py-3 rounded-md bg-accent'>
-              <i className={item.icon}></i>
-            </div>
+            <a key={index} href={item.link} target='_blank' rel='noopener noreferrer' className='cursor-pointer'>
+              <div className='border px-4 py-3 rounded-md bg-accent'>
+                <i className={item.icon}></i>
+              </div>
+            </a>
           ))}
         </div>
       </div>

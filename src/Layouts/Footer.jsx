@@ -2,7 +2,12 @@ import React from 'react';
 import Logo from '../assets/img/Vector.jpg';
 
 const Footer = () => {
-  const contactCardSosial = [{ icon: 'bx bxl-linkedin' }, { icon: 'bx bxl-instagram' }, { icon: 'bx bxl-facebook' }, { icon: 'bx bxl-twitter' }];
+  const contactCardSosial = [
+    { icon: 'bx bxl-linkedin', link: 'https://www.linkedin.com/company/lumoshive/mycompany/' },
+    { icon: 'bx bxl-instagram', link: 'https://www.instagram.com/lumoshive.official/' },
+    { icon: 'bx bxl-facebook', link: 'https://web.facebook.com/lumoshive.official?_rdc=1&_rdr' },
+    { icon: 'bx bxl-twitter', link: 'https://x.com/lumoshive?s=21' },
+  ];
 
   const services = ['Web Design/Development', 'App Development', 'UI/UX Design', 'HubSpot Integration', 'Email Marketing', 'Website Migration'];
 
@@ -36,9 +41,11 @@ const Footer = () => {
           <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at</p>
           <div className='flex gap-x-4'>
             {contactCardSosial.map((item, index) => (
-              <div key={index} className='border px-4 py-3 rounded text-accent bg-secondary '>
-                <i className={item.icon}></i>
-              </div>
+              <a key={index} href={item.link} target='_blank' rel='noopener noreferrer'>
+                <div className='border px-4 py-3 rounded text-accent bg-secondary '>
+                  <i className={item.icon}></i>
+                </div>
+              </a>
             ))}
           </div>
         </div>

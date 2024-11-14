@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Header from '../Components/Header';
 import SectionTitle from '../Components/SectionTitle';
@@ -9,10 +10,18 @@ import Black5Icon from '../assets/img/Black-5.jpg';
 import ServiceHero from '../assets/img/myHeade.jpg';
 import IconBlack from '../assets/img/OurVision/Black.png';
 import IconLamp from '../assets/img/OurVision/lamp.png';
+import { Helmet } from 'react-helmet';
+import { useSchema } from '../context/SchemaContext';
 
 const Services = () => {
+  const schema = useSchema();
   return (
     <div className='mb-32'>
+      <Helmet>
+        <title>Our Services - Your Website Name</title>
+        <meta name='description' content='Explore our range of services tailored to your needs.' />
+        <script type='application/ld+json'>{JSON.stringify(schema.services)}</script>
+      </Helmet>
       <Header breadcrumb='Services' />
       {/* section Service Start */}
       <div className='bg-secondary px-2 lg:px-0 md:px-2'>

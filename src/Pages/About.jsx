@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Header from '../Components/Header';
 import BlackIcon from '../assets/img/Black.png';
@@ -8,10 +9,20 @@ import Leader_1 from '../assets/img/Rectangle14.jpg';
 import Leader_2 from '../assets/img/Rectangle15.jpg';
 import Banner from '../Components/Banner';
 import Banner_1 from '../assets/img/banner.jpeg';
+import { Helmet } from 'react-helmet';
+import { useSchema } from '../context/SchemaContext';
+
+
 
 const About = () => {
+  const schema = useSchema();
   return (
     <>
+      <Helmet>
+        <title>About Us - Your Website Name</title>
+        <meta name='description' content='Learn more about Your Website and our team.' />
+        <script type='application/ld+json'>{JSON.stringify(schema.about)}</script>
+      </Helmet>
       <Header breadcrumb='About' />
       <div className='bg-secondary '>
         <div className='container lg:w-[80%] mx-auto flex flex-col lg:flex-row md:flex-col items-center justify-center  py-10'>
