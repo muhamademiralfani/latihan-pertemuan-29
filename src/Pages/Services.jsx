@@ -1,98 +1,54 @@
-import React from "react";
-import Header from "../Components/Header";
-import SectionTitle from "../Components/SectionTitle";
-import InfoCard from "../Components/InfoCard";
-import MainCard from "../Components/MainCard";
-import Banner from "../Components/Banner";
-import bannerImg from "../assets/img/banner.jpeg";
-import Black5Icon from "../assets/img/Black-5.jpg";
-// import headerImage from "../assets/img/header.jpg";
+import React from 'react';
+import Header from '../Components/Header';
+import SectionTitle from '../Components/SectionTitle';
+import InfoCard from '../Components/InfoCard';
+import MainCard from '../Components/MainCard';
+import Banner from '../Components/Banner';
+import bannerImg from '../assets/img/banner.jpeg';
+import Black5Icon from '../assets/img/Black-5.jpg';
+import ServiceHero from '../assets/img/myHeade.jpg';
+import IconBlack from '../assets/img/OurVision/Black.png';
+import IconLamp from '../assets/img/OurVision/lamp.png';
 
 const Services = () => {
   return (
-    <div className="mb-32">
-      <Header breadcrumb="Services" />
-      <section className="p-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-2">
-          <div className="col-span-1 mb-12">
-            <img
-              className="object-cover w-4/5 mx-auto"
-              src="https://picsum.photos/200/200"
-              alt=""
-            />
+    <div className='mb-32'>
+      <Header breadcrumb='Services' />
+      {/* section Service Start */}
+      <div className='bg-secondary px-2 lg:px-0 md:px-2'>
+        <div className='container lg:w-[80%] mx-auto flex flex-col lg:flex-row md:flex-col items-center justify-center  py-10'>
+          <div className='flex flex-col items-center justify-center lg:pl-20 lg:px-0 md:px-2 px-2'>
+            <img src={ServiceHero} alt='About Image' className='lg:max-w-lg max-h-lg rounded-5' />
           </div>
-
-          <div className="col-span-2">
-            <SectionTitle
-              breadcrumb="What We Do"
-              sectionTitle="We Develope Product That People Love to Use."
-              position="left"
-            />
-
-            <p className="mt-10">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-              quae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Quisquam, quae.
+          <div className='flex flex-col items-start justify-center lg:pr-20 lg:pl-10 px-2 mt-10 lg:mt-0'>
+            <SectionTitle sectionTitle='Better Insights For Business Growth' breadcrumb='We are here' />
+            <p className='text-base lg:pl-3 lg:pr-20'>
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
             </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
-              <div className="col-1">
-                <InfoCard
-                  bgImage="bg-primary"
-                  title="Our Vision"
-                  image="https://picsum.photos/200"
-                  desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-                />
-              </div>
-              <div className="col-1">
-                <InfoCard
-                  bgImage="bg-primary"
-                  title="Our Vision"
-                  number="02"
-                  image="https://picsum.photos/200"
-                  desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-                />
-              </div>
+            <div className='mt-5 ml-3 lg:pr-20 w-full flex gap-x-3 pr-3'>
+              <InfoCard bgImage='bg-secondary' title='Our Vision' image={IconBlack} desc='It is a long esta-blished fact that' number='' />
+              <InfoCard bgImage='bg-secondary' title='Our Goal' image={IconLamp} desc='It is a long esta-blished fact that' number='' />
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      {/* Section Service END */}
 
-      <section className="mt-32 p-20">
-        <SectionTitle
-          breadcrumb="What We Do"
-          sectionTitle="We Develope Product That People Love to Use."
-          position="center"
-        />
+      <section className='mt-32 p-20'>
+        <SectionTitle breadcrumb='What We Do' sectionTitle='We Develope Product That People Love to Use.' position='center' />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-2">
-          <MainCard
-            icon={Black5Icon}
-            title="Web Development"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-          />
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 p-2'>
+          <MainCard icon={Black5Icon} title='Web Development' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.' />
 
-          <MainCard
-            icon={Black5Icon}
-            title="Web Development"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-          />
+          <MainCard icon={Black5Icon} title='Web Development' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.' />
 
-          <MainCard
-            icon={Black5Icon}
-            title="Web Development"
-            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-          />
+          <MainCard icon={Black5Icon} title='Web Development' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.' />
         </div>
       </section>
 
-      <section className="flex justify-center items-center my-10">
-        <div className="w-4/5 md:w-3/5">
-          <Banner
-            image={bannerImg}
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-            button="Learn More"
-          />
+      <section className='flex justify-center items-center my-10'>
+        <div className='w-4/5 md:w-3/5'>
+          <Banner image={bannerImg} text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.' button='Learn More' />
         </div>
       </section>
     </div>

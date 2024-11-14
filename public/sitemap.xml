@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://lumos-react-group-28-m9la.vercel.app/</loc>
+    <lastmod>2024-11-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://lumos-react-group-28-m9la.vercel.app/about</loc>
+    <lastmod>2024-11-05</lastmod>
+    <changefreq>monthly</changefreq> <!-- Ubah ke 'monthly' karena halaman about biasanya tidak sering berubah -->
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lumos-react-group-28-m9la.vercel.app/contact</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq> <!-- Ubah ke 'monthly' karena halaman contact tidak selalu berubah -->
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lumos-react-group-28-m9la.vercel.app/blog</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority> <!-- Tingkatkan prioritas untuk blog karena biasanya sering diperbarui -->
+  </url>
+  <url>
+    <loc>https://lumos-react-group-28-m9la.vercel.app/portfolio</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>weekly</changefreq> <!-- Ubah ke 'weekly' karena portofolio mungkin diperbarui lebih sering -->
+    <priority>0.8</priority> <!-- Tingkatkan prioritas portofolio -->
+  </url>
+  <url>
+    <loc>https://lumos-react-group-28-m9la.vercel.app/service</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq> <!-- Ubah ke 'monthly' untuk halaman service -->
+    <priority>0.7</priority>
+  </url>
+  <!-- Tambahkan lebih banyak halaman sesuai kebutuhan -->
+</urlset>

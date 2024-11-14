@@ -56,7 +56,7 @@ const ContactCard = () => {
       <div className='flex flex-col gap-y-[30px]'>
         {contactCardData.map((item, index) => {
           return (
-            <div className='flex gap-4'>
+            <div key={index} className='flex gap-4'>
               <div className='px-5 rounded-md bg-secondary flex items-center justify-center text-accent text-center'>
                 <i className={`${item.icon} text-[30px]`}></i>
               </div>
