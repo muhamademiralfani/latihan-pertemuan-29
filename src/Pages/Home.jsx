@@ -8,7 +8,7 @@ import InfoCard from '../Components/InfoCard';
 import BlackIcon from '../assets/img/Black.png';
 // import MainCard from '../Components/MainCard';
 import Black5Icon from '../assets/img/Black-5.jpg';
-import ServiceHero from '../assets/img/myHeade.jpg';
+import ServiceHero from '../assets/img/Myhade.jpg';
 import Black6Icon from '../assets/img/Black-6.jpg';
 import Black7Icon from '../assets/img/Black-7.jpg';
 import Black8Icon from '../assets/img/Black-8.jpg';
