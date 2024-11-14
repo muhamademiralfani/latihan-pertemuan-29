@@ -7,7 +7,7 @@ import MainCard from '../Components/MainCard';
 import Banner from '../Components/Banner';
 import bannerImg from '../assets/img/banner.jpeg';
 import Black5Icon from '../assets/img/Black-5.jpg';
-import ServiceHero from '../assets/img/myHeade.jpg';
+import ServiceHero from '../assets/img/Myhade.jpg';
 import IconBlack from '../assets/img/OurVision/Black.png';
 import IconLamp from '../assets/img/OurVision/lamp.png';
 import { Helmet } from 'react-helmet';
